@@ -12,6 +12,7 @@
 		0C0D208221D658D7006E1C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0D208021D658D7006E1C55 /* Main.storyboard */; };
 		0C0D208421D658D8006E1C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0D208321D658D8006E1C55 /* Assets.xcassets */; };
 		0C0D208721D658D8006E1C55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0D208521D658D8006E1C55 /* LaunchScreen.storyboard */; };
+		71E1E520A5A296083F0D30A2 /* Pods_CrashlyticsDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E29D90D8EA5CFD38704DA0 /* Pods_CrashlyticsDemoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0C0D208321D658D8006E1C55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C0D208621D658D8006E1C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C0D208821D658D8006E1C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11D05814FD88EE7C11D36E46 /* Pods-CrashlyticsDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashlyticsDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrashlyticsDemoApp/Pods-CrashlyticsDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		43E29D90D8EA5CFD38704DA0 /* Pods_CrashlyticsDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrashlyticsDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A58E2F593AC249B0CEB6EF /* Pods-CrashlyticsDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashlyticsDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrashlyticsDemoApp/Pods-CrashlyticsDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E1E520A5A296083F0D30A2 /* Pods_CrashlyticsDemoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0C0D207B21D658D7006E1C55 /* CrashlyticsDemoApp */,
 				0C0D207A21D658D7006E1C55 /* Products */,
+				F6A22D01DB6F08CAF897F82E /* Pods */,
+				C2D6BBB36D3B3799434020D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = CrashlyticsDemoApp;
 			sourceTree = "<group>";
 		};
+		C2D6BBB36D3B3799434020D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43E29D90D8EA5CFD38704DA0 /* Pods_CrashlyticsDemoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6A22D01DB6F08CAF897F82E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6A58E2F593AC249B0CEB6EF /* Pods-CrashlyticsDemoApp.debug.xcconfig */,
+				11D05814FD88EE7C11D36E46 /* Pods-CrashlyticsDemoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C0D208B21D658D8006E1C55 /* Build configuration list for PBXNativeTarget "CrashlyticsDemoApp" */;
 			buildPhases = (
+				C9D6777B91DB432ED8A70FDF /* [CP] Check Pods Manifest.lock */,
 				0C0D207521D658D7006E1C55 /* Sources */,
 				0C0D207621D658D7006E1C55 /* Frameworks */,
 				0C0D207721D658D7006E1C55 /* Resources */,
@@ -129,6 +154,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9D6777B91DB432ED8A70FDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrashlyticsDemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C0D207521D658D7006E1C55 /* Sources */ = {
@@ -280,6 +330,7 @@
 		};
 		0C0D208C21D658D8006E1C55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A58E2F593AC249B0CEB6EF /* Pods-CrashlyticsDemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +349,7 @@
 		};
 		0C0D208D21D658D8006E1C55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D05814FD88EE7C11D36E46 /* Pods-CrashlyticsDemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
